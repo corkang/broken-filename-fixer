@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Hisnet filename fixer",
+  "version": "1.0.0",
+  "description": "히즈넷에서 파일을 다운받을 때 한글 파일명이 깨지는 현상을 해결합니다.",
+  "permissions": [
+    "downloads"
+  ],
+  "host_permissions": [
+    "*://*.handong.edu/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
